@@ -777,120 +777,16 @@
     </div>
     -->
 
-    <!-- Googleフォーム埋め込み: 以下のコメントを解除してURLを設定してください -->
-    <!--
+    <!-- Googleフォーム埋め込み -->
     <div class="google-form-wrapper">
-      <iframe src="https://docs.google.com/forms/d/e/XXXXXXXXXXXXXXXX/viewform?embedded=true" 
-              width="100%" height="1200" frameborder="0" marginheight="0" marginwidth="0">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScsmG00s6GyYVJwEJUoQyO8G5roQa8oSWwePQI_QMKOmFnTuw/viewform?embedded=true"
+              width="100%" height="1400" frameborder="0" marginheight="0" marginwidth="0">
         読み込んでいます…
       </iframe>
     </div>
-    -->
-
-    <!-- 仮フォーム（後でFormspree/Netlify Forms/Googleフォームに差し替え） -->
-    <!-- Formspree: action="https://formspree.io/f/XXXXXXXX" に変更 -->
-    <!-- Netlify Forms: <form netlify name="contact"> に変更 -->
-    <form class="contact-form" id="contactForm" action="#" method="POST">
-      <input type="hidden" name="_subject" value="C-BASE ジオガイド お問い合わせ" />
-      <div class="form-row">
-        <div class="form-group">
-          <label for="name">お名前 <span class="req">必須</span></label>
-          <input type="text" id="name" name="name" required placeholder="山田 太郎" />
-        </div>
-        <div class="form-group">
-          <label for="email">メールアドレス <span class="req">必須</span></label>
-          <input type="email" id="email" name="email" required placeholder="example@email.com" />
-        </div>
-      </div>
-      <div class="form-row">
-        <div class="form-group">
-          <label for="tel">電話番号</label>
-          <input type="tel" id="tel" name="tel" placeholder="090-0000-0000" />
-        </div>
-        <div class="form-group">
-          <label for="date">希望日</label>
-          <input type="date" id="date" name="date" />
-        </div>
-      </div>
-      <div class="form-row">
-        <div class="form-group">
-          <label for="people">参加人数</label>
-          <select id="people" name="people">
-            <option value="">選択してください</option>
-            <option>1名</option>
-            <option>2名</option>
-            <option>3〜4名</option>
-            <option>5〜10名</option>
-            <option>10名以上（団体）</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="tour">希望ツアー</label>
-          <select id="tour" name="tour">
-            <option value="">選択してください</option>
-            <option>三原山ツアー（約3時間）</option>
-            <option>三原山・裏砂漠ツアー（約5〜6時間）</option>
-            <option>アレンジツアー</option>
-            <option>団体・学校・研修向けガイド</option>
-            <option>まだ決めていない・相談したい</option>
-          </select>
-        </div>
-      </div>
-      <div class="form-row">
-        <div class="form-group">
-          <label for="stay">宿泊先</label>
-          <select id="stay" name="stay">
-            <option value="">選択してください</option>
-            <option>C-BASE</option>
-            <option>Villa Limone</option>
-            <option>HOTEL Narumi</option>
-            <option>その他の宿泊施設</option>
-            <option>日帰り</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="benefit">宿泊者特典の利用</label>
-          <select id="benefit" name="benefit">
-            <option value="">選択してください</option>
-            <option>利用したい</option>
-            <option>利用しない</option>
-            <option>まだわからない</option>
-          </select>
-        </div>
-      </div>
-      <div class="form-row">
-        <div class="form-group form-check-group">
-          <label>送迎希望</label>
-          <div class="check-options">
-            <label class="check-label"><input type="radio" name="transfer" value="希望する"> 希望する</label>
-            <label class="check-label"><input type="radio" name="transfer" value="希望しない"> 希望しない</label>
-            <label class="check-label"><input type="radio" name="transfer" value="要相談"> 要相談</label>
-          </div>
-        </div>
-        <div class="form-group form-check-group">
-          <label>お子様の参加</label>
-          <div class="check-options">
-            <label class="check-label"><input type="radio" name="children" value="あり"> あり</label>
-            <label class="check-label"><input type="radio" name="children" value="なし"> なし</label>
-          </div>
-        </div>
-      </div>
-      <div class="form-group">
-        <label for="children_age">お子様の年齢（ある場合）</label>
-        <input type="text" id="children_age" name="children_age" placeholder="例：7歳、10歳" />
       </div>
       <div class="form-group">
         <label for="concerns">体力面・体調で気になること</label>
-        <input type="text" id="concerns" name="concerns" placeholder="例：山歩き初心者です、膝が弱いです など" />
-      </div>
-      <div class="form-group">
-        <label for="message">メッセージ・ご希望</label>
-        <textarea id="message" name="message" rows="5" placeholder="例：裏砂漠を歩いてみたい、写真を撮りながらゆっくり歩きたい、企業研修で使いたい など"></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary btn-submit">送信する</button>
-      <p class="form-note">フォーム送信後、メールまたはLINEにて日程調整のご連絡をします（通常1〜3営業日以内）。</p>
-    </form>
-
     <div class="contact-alt">
       <p>メールで直接ご連絡の場合：</p>
       <!-- メールアドレスを設定してください -->
