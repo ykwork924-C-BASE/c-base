@@ -66,59 +66,9 @@
 
 <!-- ========== HERO ========== -->
 <section class="hero" id="hero">
-  <!-- 仮画像: assets/images/hero-sangenzan.jpg に差し替えてください -->
   <div class="hero-bg">
+    <img src="assets/images/hero.png" alt="伊豆大島の三原山" class="hero-img" />
     <div class="hero-overlay"></div>
-    <div class="hero-lava-texture"></div>
-    <!-- SVG風の火山シルエット（仮ビジュアル） -->
-    <svg class="hero-svg-landscape" viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
-      <defs>
-        <radialGradient id="skyGrad" cx="50%" cy="30%" r="70%">
-          <stop offset="0%" stop-color="#0a1628"/>
-          <stop offset="60%" stop-color="#0d2035"/>
-          <stop offset="100%" stop-color="#1a3a4a"/>
-        </radialGradient>
-        <radialGradient id="sunGrad" cx="50%" cy="50%" r="50%">
-          <stop offset="0%" stop-color="#e8c87a" stop-opacity="0.7"/>
-          <stop offset="100%" stop-color="#e8c87a" stop-opacity="0"/>
-        </radialGradient>
-      </defs>
-      <!-- 空 -->
-      <rect width="1200" height="600" fill="url(#skyGrad)"/>
-      <!-- 星 -->
-      <circle cx="120" cy="80" r="1" fill="#fff" opacity="0.6"/>
-      <circle cx="340" cy="50" r="1.5" fill="#fff" opacity="0.5"/>
-      <circle cx="580" cy="30" r="1" fill="#fff" opacity="0.7"/>
-      <circle cx="820" cy="60" r="1" fill="#fff" opacity="0.4"/>
-      <circle cx="1050" cy="40" r="1.5" fill="#fff" opacity="0.6"/>
-      <circle cx="200" cy="120" r="1" fill="#fff" opacity="0.3"/>
-      <circle cx="950" cy="90" r="1" fill="#fff" opacity="0.5"/>
-      <!-- 月の光 -->
-      <ellipse cx="600" cy="200" rx="300" ry="200" fill="url(#sunGrad)" opacity="0.3"/>
-      <!-- 海（後景） -->
-      <rect x="0" y="420" width="1200" height="180" fill="#0a1e30" opacity="0.8"/>
-      <!-- 海の反射 -->
-      <rect x="0" y="435" width="1200" height="3" fill="#1a4a6a" opacity="0.4"/>
-      <rect x="0" y="455" width="800" height="2" fill="#1a4a6a" opacity="0.3"/>
-      <!-- 遠景山 -->
-      <polygon points="0,420 180,260 360,420" fill="#0d1e2e" opacity="0.9"/>
-      <polygon points="800,420 1000,200 1200,420" fill="#0a1825" opacity="0.9"/>
-      <!-- 三原山 メイン -->
-      <polygon points="200,420 600,140 1000,420" fill="#111b24"/>
-      <!-- カルデラ -->
-      <path d="M 480,210 Q 600,180 720,210 L 700,240 Q 600,215 500,240 Z" fill="#0d1520" opacity="0.8"/>
-      <!-- 噴煙 -->
-      <ellipse cx="600" cy="150" rx="30" ry="20" fill="#334" opacity="0.3"/>
-      <ellipse cx="600" cy="120" rx="20" ry="15" fill="#445" opacity="0.2"/>
-      <!-- 溶岩の黒い大地 -->
-      <rect x="0" y="380" width="1200" height="50" fill="#0d1218"/>
-      <path d="M 0,395 Q 200,375 400,390 Q 600,380 800,392 Q 1000,378 1200,388 L 1200,420 L 0,420 Z" fill="#111820"/>
-      <!-- 植物のシルエット（再生の緑） -->
-      <ellipse cx="150" cy="395" rx="40" ry="18" fill="#1a2e1a" opacity="0.8"/>
-      <ellipse cx="300" cy="400" rx="30" ry="12" fill="#1a2e1a" opacity="0.7"/>
-      <ellipse cx="900" cy="392" rx="35" ry="15" fill="#1a2e1a" opacity="0.8"/>
-      <ellipse cx="1080" cy="398" rx="28" ry="11" fill="#1a2e1a" opacity="0.7"/>
-    </svg>
   </div>
   <div class="hero-content">
     <p class="hero-label">伊豆大島ジオパーク認定ジオガイド</p>
@@ -213,17 +163,7 @@
       <!-- TOUR 1 -->
       <article class="tour-card" id="tour-sangenjzan">
         <div class="tour-card-img">
-          <!-- 差し替え: assets/images/tour-sangenzan.jpg -->
-          <div class="img-placeholder img-volcano">
-            <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg">
-              <rect width="400" height="220" fill="#0d1a24"/>
-              <polygon points="0,220 200,60 400,220" fill="#1a2a38"/>
-              <path d="M 160,110 Q 200,90 240,110 L 235,130 Q 200,115 165,130 Z" fill="#111d2a"/>
-              <ellipse cx="90" cy="195" rx="50" ry="20" fill="#1a2e1a" opacity="0.8"/>
-              <ellipse cx="320" cy="198" rx="40" ry="16" fill="#1a2e1a" opacity="0.7"/>
-              <text x="200" y="200" text-anchor="middle" fill="#4a6a4a" font-size="11" font-family="sans-serif">三原山</text>
-            </svg>
-          </div>
+          <img src="assets/images/tour-sangenzan.png" alt="三原山ツアー" loading="lazy" />
           <div class="tour-badge">初心者・ファミリー向け</div>
         </div>
         <div class="tour-card-body">
@@ -283,18 +223,7 @@
       <!-- TOUR 2 -->
       <article class="tour-card" id="tour-urasabaku">
         <div class="tour-card-img">
-          <!-- 差し替え: assets/images/tour-urasabaku.jpg -->
-          <div class="img-placeholder img-desert">
-            <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg">
-              <rect width="400" height="220" fill="#0a1520"/>
-              <rect x="0" y="130" width="400" height="90" fill="#111820"/>
-              <path d="M 0,145 Q 100,130 200,140 Q 300,128 400,138 L 400,220 L 0,220 Z" fill="#0d1620"/>
-              <polygon points="0,220 150,70 300,220" fill="#131e2a"/>
-              <polygon points="100,220 320,50 450,220" fill="#0f1820"/>
-              <text x="200" y="110" text-anchor="middle" fill="#3a5a6a" font-size="11" font-family="sans-serif">裏砂漠</text>
-              <ellipse cx="200" cy="160" rx="150" ry="8" fill="#1a2535" opacity="0.5"/>
-            </svg>
-          </div>
+          <img src="assets/images/tour-urasabaku.png" alt="三原山・裏砂漠ツアー" loading="lazy" />
           <div class="tour-badge tour-badge-adv">上級・写真好きに</div>
         </div>
         <div class="tour-card-body">
@@ -354,18 +283,7 @@
       <!-- TOUR 3 -->
       <article class="tour-card" id="tour-arrange">
         <div class="tour-card-img">
-          <!-- 差し替え: assets/images/tour-arrange.jpg -->
-          <div class="img-placeholder img-arrange">
-            <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg">
-              <rect width="400" height="220" fill="#0d1a20"/>
-              <circle cx="80" cy="80" r="40" fill="#1a2e3a" opacity="0.8"/>
-              <circle cx="200" cy="60" r="50" fill="#131e2a" opacity="0.9"/>
-              <circle cx="330" cy="90" r="35" fill="#1a2e3a" opacity="0.7"/>
-              <rect x="0" y="160" width="400" height="60" fill="#0a1520"/>
-              <path d="M 0,170 Q 150,155 300,165 Q 360,160 400,168 L 400,220 L 0,220 Z" fill="#0d1a20"/>
-              <text x="200" y="200" text-anchor="middle" fill="#4a6a5a" font-size="11" font-family="sans-serif">アレンジコース</text>
-            </svg>
-          </div>
+          <img src="assets/images/tour-arrange.png" alt="アレンジツアー" loading="lazy" />
           <div class="tour-badge tour-badge-custom">オーダーメイド</div>
         </div>
         <div class="tour-card-body">
@@ -423,19 +341,7 @@
       <!-- TOUR 4 -->
       <article class="tour-card tour-card-group" id="tour-group">
         <div class="tour-card-img">
-          <!-- 差し替え: assets/images/tour-group.jpg -->
-          <div class="img-placeholder img-group">
-            <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg">
-              <rect width="400" height="220" fill="#0d1a18"/>
-              <circle cx="140" cy="120" r="25" fill="#1a2e28" opacity="0.9"/>
-              <circle cx="200" cy="100" r="28" fill="#1a3028" opacity="0.9"/>
-              <circle cx="260" cy="120" r="25" fill="#1a2e28" opacity="0.9"/>
-              <circle cx="100" cy="130" r="20" fill="#152820" opacity="0.8"/>
-              <circle cx="300" cy="128" r="20" fill="#152820" opacity="0.8"/>
-              <rect x="0" y="170" width="400" height="50" fill="#0a1510"/>
-              <text x="200" y="200" text-anchor="middle" fill="#3a5a48" font-size="11" font-family="sans-serif">団体・学校・研修</text>
-            </svg>
-          </div>
+          <img src="assets/images/tour-group.png" alt="団体・学校・研修向けガイド" loading="lazy" />
           <div class="tour-badge tour-badge-group">団体・法人対応</div>
         </div>
         <div class="tour-card-body">
@@ -522,25 +428,22 @@
 
     <div class="properties-grid">
       <div class="property-card">
-        <!-- 差し替え: assets/images/villa-limone.jpg -->
-        <div class="img-placeholder img-villa">
-          <span>Villa Limone</span>
+        <div class="prop-img">
+          <img src="assets/images/villa-limone.png" alt="Villa Limone" loading="lazy" />
         </div>
         <h4>Villa Limone</h4>
         <p>レモン畑に囲まれた、島暮らしを感じる一棟貸し宿泊施設</p>
       </div>
       <div class="property-card">
-        <!-- 差し替え: assets/images/hotel-narumi.jpg -->
-        <div class="img-placeholder img-narumi">
-          <span>HOTEL Narumi</span>
+        <div class="prop-img">
+          <img src="assets/images/hotel-narumi.png" alt="HOTEL Narumi" loading="lazy" />
         </div>
         <h4>HOTEL Narumi</h4>
         <p>伊豆大島・元町エリアの管理型ゲストハウス</p>
       </div>
       <div class="property-card">
-        <!-- 差し替え: assets/images/c-base.jpg -->
-        <div class="img-placeholder img-cbase">
-          <span>C-BASE</span>
+        <div class="prop-img">
+          <img src="assets/images/c-base-logo.png" alt="C-BASE" loading="lazy" style="object-fit:contain;background:#f5f0ff;" />
         </div>
         <h4>C-BASE</h4>
         <p>自然・火山・暮らし・体験をつなぐ、島の小さな拠点</p>
@@ -559,14 +462,9 @@
   <div class="container">
     <div class="guide-inner">
       <div class="guide-photo">
-        <!-- 差し替え: assets/images/guide-nishimoto.jpg -->
-        <div class="img-placeholder img-guide">
-          <svg viewBox="0 0 300 380" xmlns="http://www.w3.org/2000/svg">
-            <rect width="300" height="380" fill="#0d1a20"/>
-            <ellipse cx="150" cy="130" rx="60" ry="65" fill="#1a2e3a"/>
-            <ellipse cx="150" cy="310" rx="100" ry="80" fill="#1a2e3a"/>
-            <text x="150" y="200" text-anchor="middle" fill="#4a7a8a" font-size="12" font-family="sans-serif">ガイド写真</text>
-          </svg>
+        <div class="guide-img-wrap">
+          <img src="assets/images/guide.png" alt="ジオガイド 西本裕樹" loading="lazy" />
+        </div>
         </div>
       </div>
       <div class="guide-content">
