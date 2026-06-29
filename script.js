@@ -43,6 +43,17 @@ const heroObserver = new IntersectionObserver((entries) => {
 
 heroObserver.observe(hero);
 
+const contactSection = document.getElementById('contact');
+if (contactSection) {
+  const contactObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      floatingCta.classList.toggle('hidden-at-contact', entry.isIntersecting);
+    });
+  }, { threshold: 0.05 });
+
+  contactObserver.observe(contactSection);
+}
+
 // ===== スムーズスクロール（iOS Safari対応） =====
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
@@ -56,42 +67,24 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// ===== フォーム送信（仮実装） =====
+// ===== フォーム送信 =====
 const contactForm = document.getElementById('contactForm');
 if (contactForm) {
-  contactForm.addEventListener('submit', function(e) {
-    e.preventDefault();
+  const submitButton = contactForm.querySelector('button[type="submit"]');
+  const formStatus = document.getElementById('formStatus');
 
-    // Formspree を使う場合は以下のように変更してください：
-    // 1. action属性を "https://formspree.io/f/YOUR_FORM_ID" に変更
-    // 2. このJSブロックを削除し、標準のフォーム送信に戻す
-
-    // Netlify Forms を使う場合:
-    // <form netlify name="contact"> に変更し、このブロックを削除
-
-    // 現在は仮の確認メッセージを表示
-    const btn = contactForm.querySelector('button[type="submit"]');
-    btn.textContent = '送信しました ✓';
-    btn.style.background = '#2a6a4a';
-    btn.style.color = '#fff';
-    btn.disabled = true;
-
-    // フォームの上に確認メッセージを表示
-    const msg = document.createElement('div');
-    msg.style.cssText = `
-      background: rgba(42,106,74,0.15);
-      border: 1px solid rgba(42,106,74,0.3);
-      border-radius: 8px;
-      padding: 1.25rem 1.5rem;
-      margin-bottom: 1.5rem;
-      color: rgba(255,255,255,0.8);
-      font-size: 0.9rem;
-      line-height: 1.7;
-    `;
-    msg.innerHTML = '✓ お問い合わせを受け付けました。<br/>通常1〜3営業日以内にご連絡します。<br/>ありがとうございました！';
-    contactForm.insertBefore(msg, contactForm.firstChild);
-    msg.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  contactForm.addEventListener('submit', function() {
+    submitButton.disabled = true;
+    submitButton.textContent = '送信中…';
+    formStatus.textContent = '送信しています。画面が切り替わるまでお待ちください。';
   });
+}
+
+if (new URLSearchParams(window.location.search).get('sent') === '1') {
+  const formStatus = document.getElementById('formStatus');
+  if (formStatus) {
+    formStatus.textContent = '送信ありがとうございました。通常1〜3営業日以内にご連絡します。';
+  }
 }
 
 // ===== スクロール アニメーション =====
