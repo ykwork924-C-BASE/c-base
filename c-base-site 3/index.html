@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>C-BASE｜伊豆大島ジオガイド 西本裕樹｜三原山・裏砂漠ツアー</title>
+  <meta name="description" content="C-BASEは、伊豆大島ジオパーク認定ジオガイド西本裕樹による三原山・裏砂漠・溶岩地形・植物の再生を楽しむジオツアーを提供しています。Villa Limone、HOTEL Narumi宿泊者向け特典やアレンジツアー、団体・学校向けガイドにも対応。" />
+  <meta property="og:title" content="C-BASE｜伊豆大島ジオガイド 西本裕樹" />
+  <meta property="og:description" content="火山の島を、ただ見るだけで終わらせない。伊豆大島ジオパーク認定ジオガイドによる三原山・裏砂漠ツアー。" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://c-base.vercel.app/" />
+  <meta property="og:image" content="assets/images/hero.jpg" />
+  <link rel="canonical" href="https://c-base.vercel.app/" />
+  <!-- Google Analytics: GA4トラッキングIDをここに追加してください -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script> -->
+  <!-- <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script> -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500;700&family=Noto+Sans+JP:wght@300;400;500&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet" />
+
+  <!-- 構造化データ: LocalBusiness + TouristTrip -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TouristTrip",
+    "name": "伊豆大島ジオガイドツアー C-BASE",
+    "url": "https://c-base.vercel.app/",
+    "description": "伊豆大島ジオパーク認定ジオガイド西本裕樹による三原山・裏砂漠ツアー",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "C-BASE",
+      "url": "https://c-base.vercel.app/",
+      "email": "ykwork924@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "大島町",
+        "addressRegion": "東京都",
+        "addressCountry": "JP"
+      }
+    }
+  }
+  </script>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ========== HEADER / NAV ========== -->
+<header class="site-header" id="top">
+  <div class="header-inner">
+    <a href="#top" class="logo">
+      <span class="logo-mark">C</span><span class="logo-text">C-BASE</span>
+      <span class="logo-sub">伊豆大島ジオガイド</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="メニューを開く">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="global-nav" id="globalNav">
+      <ul>
+        <li><a href="#about">C-BASEについて</a></li>
+        <li><a href="#tours">ツアー</a></li>
+        <li><a href="#guest">宿泊者特典</a></li>
+        <li><a href="#guide">ガイド紹介</a></li>
+        <li><a href="#faq">よくある質問</a></li>
+        <li><a href="#contact" class="nav-cta">予約・相談</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- ========== HERO ========== -->
+<section class="hero" id="hero">
+  <div class="hero-bg">
+    <img src="assets/images/hero.jpg" alt="伊豆大島の三原山" class="hero-img" />
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="hero-content">
+    <p class="hero-label">伊豆大島ジオパーク認定ジオガイド</p>
+    <h1 class="hero-title">
+      火山の島を、<br class="sp-only"/>ただ見るだけで<br/>終わらせない。
+    </h1>
+    <p class="hero-sub">
+      三原山、裏砂漠、溶岩の大地、植物の再生、島の暮らし。<br/>
+      ジオガイドと歩くことで、伊豆大島の景色が<br class="sp-only"/>少し違って見えてきます。
+    </p>
+    <div class="hero-ctas">
+      <a href="#tours" class="btn btn-primary">ツアーを見る</a>
+      <a href="#contact" class="btn btn-outline">予約・相談する</a>
+      <a href="#guest" class="btn btn-ghost">宿泊者特典を見る</a>
+    </div>
+    <div class="hero-scroll">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== ABOUT ========== -->
+<section class="section section-about" id="about">
+  <div class="container">
+    <div class="section-label">C-BASEについて</div>
+    <h2 class="section-title">伊豆大島を、もっと深く。</h2>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>
+          C-BASEは、伊豆大島の自然・火山・暮らし・宿泊体験をつなぐ、小さな拠点です。
+        </p>
+        <p>
+          三原山、裏砂漠、溶岩地形、島に根づく植物たち——
+          ただ景色を見るだけでも十分に美しいけれど、
+          ジオガイドと一緒に歩くと、「なぜこの景色が生まれたのか」
+          「火山と植物と島の暮らしがどうつながっているのか」が
+          見えてきます。
+        </p>
+        <p>
+          ジオガイドツアーを中心に、宿泊施設と連携した島時間の提案、
+          地域の自然や文化を伝える体験づくりを行っています。
+          伊豆大島に来るすべての人に、
+          島の魅力をより深く感じてもらえる場所を目指しています。
+        </p>
+      </div>
+      <div class="about-features">
+        <div class="feature-item">
+          <div class="feature-icon">🌋</div>
+          <div class="feature-body">
+            <strong>火山の大地を知る</strong>
+            <p>三原山、裏砂漠、溶岩地形の成り立ちをわかりやすくご案内</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">🌿</div>
+          <div class="feature-body">
+            <strong>植物と再生の物語</strong>
+            <p>火山の大地に根づく植物たちの、たくましい再生の過程</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">🏡</div>
+          <div class="feature-body">
+            <strong>島の暮らしとつながる</strong>
+            <p>椿、明日葉、レモン、ホップ畑——自然と島の産業が交わる場所</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">🏨</div>
+          <div class="feature-body">
+            <strong>宿泊と組み合わせる</strong>
+            <p>Villa Limone・HOTEL Narumi・C-BASE宿泊者向け特典あり</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== TOURS ========== -->
+<section class="section section-tours" id="tours">
+  <div class="container">
+    <div class="section-label">ツアー一覧</div>
+    <h2 class="section-title">伊豆大島を歩く、4つの選択肢</h2>
+    <p class="section-lead">
+      初めての方から歩き慣れた方まで、体力や目的に合わせてお選びください。
+    </p>
+
+    <div class="tours-grid">
+
+      <!-- TOUR 1 -->
+      <article class="tour-card" id="tour-sangenjzan">
+        <div class="tour-card-img">
+          <img src="assets/images/tour-sangenzan.jpg" alt="三原山ツアー" loading="lazy" />
+          <div class="tour-badge">初心者・ファミリー向け</div>
+          <div class="photo-credit">出典：伊豆大島ジオパークHP</div>
+        </div>
+        <div class="tour-card-body">
+          <div class="tour-number">Tour 01</div>
+          <h3 class="tour-title">三原山ツアー</h3>
+          <p class="tour-desc">
+            三原山の火口周辺や溶岩地形、植物の移り変わりを楽しむトレッキングツアー。
+            火山の力強さ、植物の再生、伊豆大島らしい景色を短時間で体感できます。
+          </p>
+          <div class="tour-meta">
+            <div class="tour-meta-item">
+              <span class="meta-label">所要時間</span>
+              <span class="meta-value">約3時間</span>
+            </div>
+            <div class="tour-meta-item">
+              <span class="meta-label">対象</span>
+              <span class="meta-value">小学生以上</span>
+            </div>
+            <div class="tour-meta-item">
+              <span class="meta-label">定員</span>
+              <span class="meta-value">最大10名</span>
+            </div>
+          </div>
+          <div class="tour-price-box">
+            <div class="price-row">
+              <span class="price-label">通常料金</span>
+              <span class="price-value">¥7,000 <small>/ 1名</small></span>
+            </div>
+            <div class="price-row price-guest">
+              <span class="price-label">🏡 宿泊者特典</span>
+              <span class="price-value">¥6,500 <small>/ 1名</small></span>
+            </div>
+          </div>
+          <div class="tour-route">
+            <div class="route-label">モデルルート</div>
+            <div class="route-steps">
+              <span>山頂口集合</span>
+              <span class="arr">→</span>
+              <span>溶岩流・植生の説明</span>
+              <span class="arr">→</span>
+              <span>三原神社</span>
+              <span class="arr">→</span>
+              <span>火口展望</span>
+              <span class="arr">→</span>
+              <span>休憩しながら下山</span>
+            </div>
+          </div>
+          <div class="tour-features">
+            <span class="feature-tag">✓ 初心者おすすめ</span>
+            <span class="feature-tag">✓ お子様連れ可</span>
+            <span class="feature-tag">✓ 体力に合わせて調整</span>
+          </div>
+          <a href="#contact" class="btn btn-primary btn-block">このツアーを予約・相談する</a>
+        </div>
+      </article>
+
+      <!-- TOUR 2 -->
+      <article class="tour-card" id="tour-urasabaku">
+        <div class="tour-card-img">
+          <img src="assets/images/tour-urasabaku.jpg" alt="三原山・裏砂漠ツアー" loading="lazy" />
+          <div class="tour-badge tour-badge-adv">上級・写真好きに</div>
+        </div>
+        <div class="tour-card-body">
+          <div class="tour-number">Tour 02</div>
+          <h3 class="tour-title">三原山・裏砂漠ツアー</h3>
+          <p class="tour-desc">
+            三原山から、日本で唯一「砂漠」と地図に表記される裏砂漠まで歩く、伊豆大島らしさを満喫できるツアー。
+            黒い火山の大地と圧倒的なスケールの景色を楽しめます。
+          </p>
+          <div class="tour-meta">
+            <div class="tour-meta-item">
+              <span class="meta-label">所要時間</span>
+              <span class="meta-value">約5〜6時間</span>
+            </div>
+            <div class="tour-meta-item">
+              <span class="meta-label">対象</span>
+              <span class="meta-value">小学生以上・歩き慣れた方</span>
+            </div>
+            <div class="tour-meta-item">
+              <span class="meta-label">定員</span>
+              <span class="meta-value">最大10名</span>
+            </div>
+          </div>
+          <div class="tour-price-box">
+            <div class="price-row">
+              <span class="price-label">通常料金</span>
+              <span class="price-value">¥10,000〜 <small>/ 1名</small></span>
+            </div>
+            <div class="price-row price-guest">
+              <span class="price-label">🏡 宿泊者特典</span>
+              <span class="price-value">¥9,000〜 <small>/ 1名</small></span>
+            </div>
+          </div>
+          <div class="tour-route">
+            <div class="route-label">モデルルート</div>
+            <div class="route-steps">
+              <span>山頂口集合</span>
+              <span class="arr">→</span>
+              <span>三原山トレッキング</span>
+              <span class="arr">→</span>
+              <span>火口周辺</span>
+              <span class="arr">→</span>
+              <span>裏砂漠へ</span>
+              <span class="arr">→</span>
+              <span>ジオロックガーデン</span>
+            </div>
+          </div>
+          <div class="tour-features">
+            <span class="feature-tag">✓ 非日常の絶景</span>
+            <span class="feature-tag">✓ 写真好きにおすすめ</span>
+            <span class="feature-tag">✓ 安全優先でコース調整</span>
+          </div>
+          <a href="#contact" class="btn btn-primary btn-block">このツアーを予約・相談する</a>
+        </div>
+      </article>
+
+      <!-- TOUR 3 -->
+      <article class="tour-card" id="tour-arrange">
+        <div class="tour-card-img">
+          <img src="assets/images/tour-arrange.jpg" alt="アレンジツアー" loading="lazy" />
+          <div class="tour-badge tour-badge-custom">オーダーメイド</div>
+        </div>
+        <div class="tour-card-body">
+          <div class="tour-number">Tour 03</div>
+          <h3 class="tour-title">アレンジツアー</h3>
+          <p class="tour-desc">
+            「赤ダレを見たい」「写真を撮りながらゆっくり歩きたい」「家族で無理なく楽しみたい」——
+            ご希望に合わせて内容を組み立てるオーダーメイドツアーです。
+          </p>
+          <div class="tour-meta">
+            <div class="tour-meta-item">
+              <span class="meta-label">所要時間</span>
+              <span class="meta-value">3時間〜（相談可）</span>
+            </div>
+            <div class="tour-meta-item">
+              <span class="meta-label">対象</span>
+              <span class="meta-value">小学生以上</span>
+            </div>
+            <div class="tour-meta-item">
+              <span class="meta-label">定員</span>
+              <span class="meta-value">最大10名・団体応相談</span>
+            </div>
+          </div>
+          <div class="tour-price-box">
+            <div class="price-row">
+              <span class="price-label">3時間コース</span>
+              <span class="price-value">¥8,000 <small>/ 1名</small></span>
+            </div>
+            <div class="price-row">
+              <span class="price-label">延長</span>
+              <span class="price-value">+¥2,000 <small>/ 1時間</small></span>
+            </div>
+            <div class="price-row">
+              <span class="price-label">5〜6時間コース</span>
+              <span class="price-value">¥12,000〜14,000 <small>/ 1名</small></span>
+            </div>
+            <div class="price-row price-guest">
+              <span class="price-label">🏡 宿泊者特典</span>
+              <span class="price-value">通常料金より10%OFF</span>
+            </div>
+          </div>
+          <div class="arrange-examples">
+            <div class="arrange-label">コース例</div>
+            <ul>
+              <li>地層大切断面〜波浮港周遊コース</li>
+              <li>裏砂漠キャニオン観察コース</li>
+              <li>赤ダレ・幻の池・表砂漠コース</li>
+              <li>サンセットパームラインコース</li>
+              <li>ファミリー向けゆったりコース</li>
+              <li>リトリート・仲間旅・写真旅向けコースなど</li>
+            </ul>
+          </div>
+          <a href="#contact" class="btn btn-primary btn-block">内容・日程を相談する</a>
+        </div>
+      </article>
+
+      <!-- TOUR 4 -->
+      <article class="tour-card tour-card-group" id="tour-group">
+        <div class="tour-card-img">
+          <img src="assets/images/tour-group.jpg" alt="団体・学校・研修向けガイド" loading="lazy" />
+          <div class="tour-badge tour-badge-group">団体・法人対応</div>
+        </div>
+        <div class="tour-card-body">
+          <div class="tour-number">Tour 04</div>
+          <h3 class="tour-title">団体・学校・研修向けガイド</h3>
+          <p class="tour-desc">
+            学校団体、企業研修、リトリート、地域学習などにも対応。
+            元小学校教員としての経験を活かし、年齢や目的に合わせてわかりやすくご案内します。
+          </p>
+          <div class="group-features">
+            <div class="group-feature-item">
+              <span class="gf-icon">🎒</span>
+              <span>子ども向け説明・学習テーマに合わせた構成</span>
+            </div>
+            <div class="group-feature-item">
+              <span class="gf-icon">🏢</span>
+              <span>企業リトリート・チームビルディングにも対応</span>
+            </div>
+            <div class="group-feature-item">
+              <span class="gf-icon">🌋</span>
+              <span>火山・防災・島の暮らし・産業を組み合わせたプログラム</span>
+            </div>
+            <div class="group-feature-item">
+              <span class="gf-icon">🔒</span>
+              <span>安全管理重視・傷害保険・賠償責任保険加入済み</span>
+            </div>
+          </div>
+          <div class="tour-price-box tour-price-inquiry">
+            <p>料金は人数・時間・内容により個別見積もりです。</p>
+            <p>まずはお気軽にご相談ください。</p>
+          </div>
+          <a href="#contact" class="btn btn-primary btn-block">内容・お見積もりを相談する</a>
+        </div>
+      </article>
+
+    </div><!-- /tours-grid -->
+  </div>
+</section>
+
+<!-- ========== GUEST BENEFITS ========== -->
+<section class="section section-guest" id="guest">
+  <div class="container">
+    <div class="section-label">宿泊者特典</div>
+    <h2 class="section-title">ご宿泊の方へ、<br/>より深い島時間を。</h2>
+    <div class="guest-intro">
+      <p>
+        C-BASE・Villa Limone・HOTEL Narumiにご宿泊の方には、
+        ご滞在日程に合わせて無理のないジオガイドツアーをご提案できます。
+      </p>
+      <p>
+        「到着日の午後に軽く三原山へ」「チェックアウト前に島の見どころを知りたい」
+        「リトリートの一部として自然の中を歩きたい」——
+        宿での滞在とジオツアーを組み合わせることで、
+        伊豆大島での時間がより深く、心に残るものになります。
+      </p>
+    </div>
+
+    <div class="benefits-table">
+      <div class="benefits-row benefits-header">
+        <div class="bcol-tour">ツアー</div>
+        <div class="bcol-normal">通常料金</div>
+        <div class="bcol-guest">宿泊者特典</div>
+      </div>
+      <div class="benefits-row">
+        <div class="bcol-tour">三原山ツアー（約3時間）</div>
+        <div class="bcol-normal">¥7,000 / 1名</div>
+        <div class="bcol-guest">¥6,500 / 1名</div>
+      </div>
+      <div class="benefits-row">
+        <div class="bcol-tour">三原山・裏砂漠ツアー（約5〜6時間）</div>
+        <div class="bcol-normal">¥10,000〜 / 1名</div>
+        <div class="bcol-guest">¥9,000〜 / 1名</div>
+      </div>
+      <div class="benefits-row">
+        <div class="bcol-tour">アレンジツアー</div>
+        <div class="bcol-normal">通常料金</div>
+        <div class="bcol-guest">通常料金より10%OFF</div>
+      </div>
+      <div class="benefits-row">
+        <div class="bcol-tour">団体・研修・貸切</div>
+        <div class="bcol-normal" colspan="2" style="grid-column: span 2; text-align:center">個別見積もり（要相談）</div>
+      </div>
+    </div>
+
+    <div class="properties-grid">
+      <div class="property-card">
+        <div class="prop-img">
+          <img src="assets/images/villa-limone.jpg" alt="Villa Limone" loading="lazy" />
+        </div>
+        <h4>Villa Limone</h4>
+        <p>レモン畑に囲まれた、島暮らしを感じる一棟貸し宿泊施設</p>
+      </div>
+      <div class="property-card">
+        <div class="prop-img">
+          <img src="assets/images/hotel-narumi.jpg" alt="HOTEL Narumi" loading="lazy" />
+        </div>
+        <h4>HOTEL Narumi</h4>
+        <p>伊豆大島・元町エリアの管理型ゲストハウス</p>
+      </div>
+      <div class="property-card">
+        <div class="prop-img">
+          <img src="assets/images/c-base-logo.jpg" alt="C-BASE" loading="lazy" class="c-base-card-logo" />
+        </div>
+        <h4>C-BASE</h4>
+        <p>自然・火山・暮らし・体験をつなぐ、島の小さな拠点</p>
+      </div>
+    </div>
+
+    <div class="guest-note">
+      ※宿泊者特典は上記3施設のご宿泊者限定です。ご予約時に宿泊施設名をお知らせください。<br/>
+      ※天候、火山ガス、強風などの状況により、安全を優先してコース変更または中止となる場合があります。
+    </div>
+  </div>
+</section>
+
+<!-- ========== GUIDE ========== -->
+<section class="section section-guide" id="guide">
+  <div class="container">
+    <div class="guide-inner">
+      <div class="guide-photo">
+        <div class="guide-img-wrap">
+          <img src="assets/images/guide.jpg" alt="ジオガイド 西本裕樹" loading="lazy" />
+        </div>
+      </div>
+      <div class="guide-content">
+        <div class="section-label">ガイド紹介</div>
+        <h2 class="guide-name">西本 裕樹</h2>
+        <div class="guide-titles">
+          <span class="guide-title-badge">伊豆大島ジオパーク認定ジオガイド</span>
+        </div>
+        <p class="guide-bio">
+          伊豆大島在住。元小学校教員として、子どもにも大人にもわかりやすく伝えることを大切にしてきました。
+        </p>
+        <p class="guide-bio">
+          三原山や裏砂漠、火山の大地に根づく植物、島の暮らしや文化のつながりを、
+          専門用語に頼りすぎず、楽しくわかりやすくご案内します。
+        </p>
+        <p class="guide-bio">
+          C-BASEの運営、Villa LimoneやHOTEL Narumiの現地管理にも関わりながら、
+          宿泊される方の島時間もサポートしています。
+          レモン畑、ホップ畑、野菜畑など、島の畑仕事にも関わっており、
+          火山の土地と島の暮らし・産業のつながりにも深い関心を持っています。
+        </p>
+        <div class="guide-values">
+          <div class="guide-value-title">ガイドとして大切にしていること</div>
+          <ul>
+            <li>安全第一</li>
+            <li>お客様の興味や体力に合わせる</li>
+            <li>難しい話をわかりやすく</li>
+            <li>景色の背景にある物語を伝える</li>
+            <li>伊豆大島をまた訪れたくなる時間にする</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SAFETY ========== -->
+<section class="section section-safety" id="safety">
+  <div class="container">
+    <div class="section-label">安全管理・持ち物・注意事項</div>
+    <h2 class="section-title">安全に、そして安心して。</h2>
+
+    <div class="safety-grid">
+      <div class="safety-block">
+        <h3>⛰️ 活火山であることについて</h3>
+        <p>
+          伊豆大島は活火山です。天候、火山ガス、強風、濃霧、視界不良、
+          参加者の体調により、コース変更・短縮・中止する場合があります。
+          立入禁止区域には入りません。
+        </p>
+      </div>
+      <div class="safety-block">
+        <h3>🌿 自然環境の保全</h3>
+        <p>
+          岩石・植物・動物の採取は行いません。
+          自然環境を大切にしながら歩きます。
+        </p>
+      </div>
+      <div class="safety-block">
+        <h3>📋 参加にあたって</h3>
+        <p>
+          ツアー前に参加同意書・安全確認書の記入をお願いする場合があります。
+          体調不良、持病、アレルギー、歩行に不安がある場合は事前にご相談ください。
+        </p>
+      </div>
+      <div class="safety-block">
+        <h3>🛡️ 保険について</h3>
+        <p>
+          傷害保険・賠償責任保険に加入済みです。
+          初心者やお子様連れの方にも無理のないルートをご提案します。
+        </p>
+      </div>
+    </div>
+
+    <div class="gear-section">
+      <h3>👟 服装・持ち物</h3>
+      <div class="gear-grid">
+        <div class="gear-item"><span class="gear-icon">👟</span> 歩きやすい靴（三原山・裏砂漠コースはトレッキングシューズ推奨）</div>
+        <div class="gear-item"><span class="gear-icon">🧴</span> 飲み物</div>
+        <div class="gear-item"><span class="gear-icon">🧢</span> 帽子</div>
+        <div class="gear-item"><span class="gear-icon">🌧️</span> 雨具</div>
+        <div class="gear-item"><span class="gear-icon">🧥</span> 防寒具</div>
+        <div class="gear-item"><span class="gear-icon">🍱</span> 昼食・行動食（長時間コースの場合）</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FAQ ========== -->
+<section class="section section-faq" id="faq">
+  <div class="container">
+    <div class="section-label">よくある質問</div>
+    <h2 class="section-title">はじめての方へ</h2>
+
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>初心者でも参加できますか？</summary>
+        <div class="faq-answer">
+          三原山ツアーは初心者の方にもおすすめです。
+          体力や天候に合わせて無理のないルートをご提案します。
+          不安なことがあれば、事前のご相談もお気軽にどうぞ。
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary>子どもも参加できますか？</summary>
+        <div class="faq-answer">
+          小学生以上を目安にしています。元小学校教員としての経験を活かし、
+          お子様にもわかりやすくご案内します。
+          未就学児の参加は内容により相談可能です。
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary>雨の日はどうなりますか？</summary>
+        <div class="faq-answer">
+          小雨の場合は実施できることもありますが、強風、濃霧、火山ガス、雷など
+          安全上の不安がある場合は中止またはコース変更します。
+          天候によるキャンセルについては事前にご連絡します。
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary>送迎はありますか？</summary>
+        <div class="faq-answer">
+          ご指定の場所への送迎は人数や日程により相談可能です。
+          4名以上の場合は事前にご相談ください。
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary>何を持っていけばいいですか？</summary>
+        <div class="faq-answer">
+          歩きやすい靴、飲み物、雨具、防寒具、帽子をご用意ください。
+          長時間のコースでは昼食や行動食もお持ちください。
+          詳しくは上の「服装・持ち物」の欄をご参照ください。
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary>予約はどうすればいいですか？</summary>
+        <div class="faq-answer">
+          下のお問い合わせフォームからご相談ください。
+          フォーム送信後に、メールまたはLINEで日程調整を行います。
+          <!-- LINE予約ボタンを追加する場合はここに挿入 -->
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary>宿泊者割引はありますか？</summary>
+        <div class="faq-answer">
+          C-BASE、Villa Limone、HOTEL Narumiにご宿泊の方限定の
+          特典料金をご用意しています。
+          ご予約時に宿泊施設名をお知らせください。
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary>団体や学校でも依頼できますか？</summary>
+        <div class="faq-answer">
+          内容・人数・目的に合わせて個別にご提案します。
+          学校団体、企業研修、リトリート、地域学習など、
+          まずはお気軽にご相談ください。
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ========== GROUP / CORPORATE ========== -->
+<section class="section section-group" id="group">
+  <div class="container">
+    <div class="section-label">団体・学校・研修向け</div>
+    <h2 class="section-title">目的に合わせた<br/>プログラムをご提案します。</h2>
+    <div class="group-grid">
+      <div class="group-card">
+        <div class="group-card-icon">🏫</div>
+        <h3>学校・教育機関</h3>
+        <p>小学校から大学まで、地質・火山・生態・防災など学習テーマに合わせて構成。元小学校教員として、子どもたちに伝わる言葉でご案内します。</p>
+      </div>
+      <div class="group-card">
+        <div class="group-card-icon">🏢</div>
+        <h3>企業研修・リトリート</h3>
+        <p>非日常の自然の中でのリフレッシュ、チームビルディング、マインドフルネス的な島歩きも対応。島の自然が、新しい視点をくれることがあります。</p>
+      </div>
+      <div class="group-card">
+        <div class="group-card-icon">🤝</div>
+        <h3>地域学習・コミュニティ</h3>
+        <p>島の自然、火山、防災、暮らし、農業・産業を組み合わせたプログラムも相談可能。島に関わるすべての活動と連携できます。</p>
+      </div>
+    </div>
+    <div class="group-cta">
+      <p>人数・時間・目的に合わせて個別にご提案します。まずはお気軽にご相談ください。</p>
+      <a href="#contact" class="btn btn-primary">団体・研修の相談をする</a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CONTACT ========== -->
+<section class="section section-contact" id="contact">
+  <div class="container">
+    <div class="section-label">予約・お問い合わせ</div>
+    <h2 class="section-title">まずは、お気軽にご相談ください。</h2>
+    <p class="contact-lead">
+      ご希望や体力、天候に合わせて無理のないコースをご提案します。<br/>
+      「まだ決めていない」「日程が合うか確認したい」でも大丈夫です。
+    </p>
+
+    <form
+      class="contact-form"
+      id="contactForm"
+      action="https://formsubmit.co/ykwork924@gmail.com"
+      method="POST"
+    >
+      <input type="hidden" name="_subject" value="C-BASE 予約・お問い合わせ" />
+      <input type="hidden" name="_template" value="table" />
+      <input type="hidden" name="_captcha" value="false" />
+      <input type="hidden" name="_next" value="https://c-base.vercel.app/?sent=1#contact" />
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">お名前 <span class="req">必須</span></label>
+          <input id="name" name="お名前" type="text" placeholder="山田 太郎" autocomplete="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">メールアドレス <span class="req">必須</span></label>
+          <input id="email" name="email" type="email" placeholder="example@email.com" autocomplete="email" required />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="phone">電話番号</label>
+          <input id="phone" name="電話番号" type="tel" placeholder="090-0000-0000" autocomplete="tel" />
+        </div>
+        <div class="form-group">
+          <label for="preferredDate">希望日</label>
+          <input id="preferredDate" name="希望日" type="date" />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="participants">参加人数</label>
+          <select id="participants" name="参加人数">
+            <option value="">選択してください</option>
+            <option value="1名">1名</option>
+            <option value="2名">2名</option>
+            <option value="3名">3名</option>
+            <option value="4名">4名</option>
+            <option value="5名">5名</option>
+            <option value="6名">6名</option>
+            <option value="7名">7名</option>
+            <option value="8名">8名</option>
+            <option value="9名">9名</option>
+            <option value="10名">10名</option>
+            <option value="10名以上（要相談）">10名以上（要相談）</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="tour">希望ツアー</label>
+          <select id="tour" name="希望ツアー">
+            <option value="">選択してください</option>
+            <option value="三原山">三原山</option>
+            <option value="三原山・裏砂漠">三原山・裏砂漠</option>
+            <option value="アレンジツアー">アレンジツアー</option>
+            <option value="団体・研修・貸切">団体・研修・貸切</option>
+            <option value="その他">その他</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="accommodation">宿泊先</label>
+          <select id="accommodation" name="宿泊先">
+            <option value="">選択してください</option>
+            <option value="C-BASE">C-BASE</option>
+            <option value="Villa Limone">Villa Limone</option>
+            <option value="HOTEL Narumi">HOTEL Narumi</option>
+            <option value="その他の宿泊施設">その他の宿泊施設</option>
+            <option value="日帰り">日帰り</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="guestBenefit">宿泊者特典の利用</label>
+          <select id="guestBenefit" name="宿泊者特典の利用">
+            <option value="">選択してください</option>
+            <option value="利用したい">利用したい</option>
+            <option value="利用しない">利用しない</option>
+            <option value="相談したい">相談したい</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <fieldset class="form-group form-choice">
+          <legend>送迎希望</legend>
+          <div class="check-options">
+            <label class="check-label"><input type="radio" name="送迎希望" value="希望する" /> 希望する</label>
+            <label class="check-label"><input type="radio" name="送迎希望" value="希望しない" /> 希望しない</label>
+            <label class="check-label"><input type="radio" name="送迎希望" value="要相談" /> 要相談</label>
+          </div>
+        </fieldset>
+        <fieldset class="form-group form-choice">
+          <legend>お子様の参加</legend>
+          <div class="check-options">
+            <label class="check-label"><input type="radio" name="お子様の参加" value="あり" /> あり</label>
+            <label class="check-label"><input type="radio" name="お子様の参加" value="なし" /> なし</label>
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="form-group">
+        <label for="childAges">お子様の年齢（ある場合）</label>
+        <input id="childAges" name="お子様の年齢" type="text" placeholder="例：7歳、10歳" />
+      </div>
+
+      <div class="form-group">
+        <label for="concerns">体力面・体調で気になること</label>
+        <input id="concerns" name="体力面・体調で気になること" type="text" placeholder="例：山歩き初心者です、膝が弱いです など" />
+      </div>
+
+      <div class="form-group">
+        <label for="message">メッセージ・ご希望</label>
+        <textarea id="message" name="メッセージ・ご希望" rows="5" placeholder="例：裏砂漠を歩いてみたい、写真を撮りながらゆっくり歩きたい、企業研修で使いたい など"></textarea>
+      </div>
+
+      <button class="btn contact-submit" type="submit">送信する</button>
+      <p class="form-note">フォーム送信後、メールにて日程調整のご連絡をします（通常1〜3営業日以内）。初回のみ送信確認メールの承認が必要です。</p>
+      <p class="form-status" id="formStatus" aria-live="polite"></p>
+    </form>
+
+    <div class="contact-alt">
+      <p>メールで直接ご連絡の場合：</p>
+      <a href="mailto:ykwork924@gmail.com" class="contact-email">ykwork924@gmail.com</a>
+      <p class="contact-site-label">公式サイト：</p>
+      <a href="https://c-base.vercel.app/" class="contact-email" target="_blank" rel="noopener">https://c-base.vercel.app/</a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-logo">
+      <span class="logo-mark">C</span>
+      <div>
+        <div class="footer-logo-text">C-BASE</div>
+        <div class="footer-logo-sub">伊豆大島ジオガイド</div>
+      </div>
+    </div>
+    <div class="footer-links">
+      <a href="#about">C-BASEについて</a>
+      <a href="#tours">ツアー一覧</a>
+      <a href="#guest">宿泊者特典</a>
+      <a href="#guide">ガイド紹介</a>
+      <a href="#safety">安全管理</a>
+      <a href="#faq">よくある質問</a>
+      <a href="#group">団体・研修向け</a>
+      <a href="#contact">予約・お問い合わせ</a>
+    </div>
+    <div class="footer-info">
+      <p>伊豆大島 元町 ｜ C-BASE</p>
+      <p>伊豆大島ジオパーク認定ジオガイド 西本裕樹</p>
+      <p><a href="mailto:ykwork924@gmail.com">ykwork924@gmail.com</a></p>
+      <p><a href="https://c-base.vercel.app/" target="_blank" rel="noopener">https://c-base.vercel.app/</a></p>
+    </div>
+    <div class="footer-copy">
+      <p>© 2025 C-BASE. All rights reserved.</p>
+      <p style="font-size:0.72rem;opacity:0.5;margin-top:0.3rem;">
+        将来の追加ページ候補：体験・ワークショップ一覧 / 畑・農業体験 / 物販 / ブログ（島の今） / アクセス・地図
+      </p>
+    </div>
+  </div>
+</footer>
+
+<!-- ========== FLOATING CTA ========== -->
+<div class="floating-cta" id="floatingCta">
+  <a href="#contact" class="btn btn-primary">予約・相談する</a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
